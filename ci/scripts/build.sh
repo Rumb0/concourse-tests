@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -cx
+set -cex
 
 whoami
 

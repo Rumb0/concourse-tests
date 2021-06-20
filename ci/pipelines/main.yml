@@ -50,6 +50,7 @@ jobs:
       platform: linux
       inputs:
       - name: repo
+      - name: github
       image_resource:
         type: registry-image
         source:
