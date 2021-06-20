@@ -8,7 +8,7 @@ resources:
   type: git
   icon: github
   source:
-    uri: git@github.com:Rumb0/concourse-tests.git
+    uri: https://github.com/Rumb0/concourse-tests.git
 
 
 jobs:
