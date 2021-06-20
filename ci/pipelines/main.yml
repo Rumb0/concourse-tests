@@ -28,14 +28,14 @@ jobs:
     passed: [set-self]
     trigger: true
   - task: hello-world-task
+    vars:
+      TEST_VAR: VALUE_OF_TEST_VAR
+      TEST_VAR2: VALUE_OF_TEST_VAR2
     config:
       platform: windows
       inputs:
       - name: repo
       - name: github
-      vars:
-        TEST_VAR: VALUE_OF_TEST_VAR
-        TEST_VAR2: VALUE_OF_TEST_VAR2
       run:
         path: bash
         args: 
