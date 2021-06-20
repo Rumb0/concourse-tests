@@ -36,7 +36,7 @@ jobs:
         TEST_VAR2: VALUE_OF_TEST_VAR2
       run:
         path: bash
-        args: github/ci/scripts/build.sh
+        args: [ "github/ci/scripts/build.sh" ]
 
 
 - name: hello-linux-job
@@ -59,4 +59,4 @@ jobs:
         TEST_VAR2: VALUE_OF_TEST_VAR2
       run:
         path: bash
-        args: github/ci/scripts/build.sh
+        args: [ "github/ci/scripts/build.sh" ]
