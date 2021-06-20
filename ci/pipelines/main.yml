@@ -36,15 +36,8 @@ jobs:
         TEST_VAR2: VALUE_OF_TEST_VAR2
       run:
         path: bash
-        args:
-        - -cx 
-        - |
-          whoami
-          pwd
-          ls -la
-          ls -R
-          echo VARS: ${TEST_VAR} ${TEST_VAR2}
-          env
+        args: github/ci/scripts/build.sh
+
 
 - name: hello-linux-job
   plan:
@@ -61,12 +54,9 @@ jobs:
         type: registry-image
         source:
           repository: ubuntu
+      params:
+        TEST_VAR: VALUE_OF_TEST_VAR
+        TEST_VAR2: VALUE_OF_TEST_VAR2
       run:
         path: bash
-        args:
-        - -cx 
-        - |
-          whoami
-          pwd
-          ls -la
-          ls -R
+        args: github/ci/scripts/build.sh
