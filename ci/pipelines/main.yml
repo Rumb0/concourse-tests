@@ -1,12 +1,13 @@
 resources:
 - name: repo
-  type: git
+  type: gitlab
   source:
     uri: https://github.com/concourse/examples.git
 
 - name: github
   type: git
   icon: github
+  check_every: 3s
   source:
     uri: https://github.com/Rumb0/concourse-tests.git
 
