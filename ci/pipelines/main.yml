@@ -29,7 +29,7 @@ jobs:
     trigger: true
   - task: hello-world-task
     vars:
-      TEST_VAR: VALUE_OF_TEST_VAR
+      test: VALUE_OF_TEST_VAR
       TEST_VAR2: VALUE_OF_TEST_VAR2
     config:
       platform: windows
@@ -40,8 +40,8 @@ jobs:
         path: bash
         args: 
         - |
-          export TEST_VAR=((TEST_VAR))
-          export TEST_VAR2=((TEST_VAR2))
+          export TEST_VAR="((test))"
+          export TEST_VAR2="((TEST_VAR2))"
           github/ci/scripts/build.sh
 
 - name: hello-linux-job
