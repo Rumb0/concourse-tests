@@ -17,8 +17,11 @@ var_source:
 - name: std
   type: dummy
   config: 
-    win_var1: valof_win_var1
-    win_var2: valof_win_var2
+    vars:
+      win:
+        default1: "value of default 1"
+      win_var1: valof_win_var1
+      win_var2: valof_win_var2
 
 
 jobs:
@@ -46,7 +49,7 @@ jobs:
         args: 
         - |
           export TEST_VAR="((std:win_var1))"
-          export TEST_VAR2="((std:win_var2))"
+          export TEST_VAR2="((std:win.default1))"
           github/ci/scripts/build.sh
 
 - name: hello-linux-job
