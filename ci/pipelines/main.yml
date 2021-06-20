@@ -8,7 +8,7 @@ resources:
 - name: github
   type: git
   icon: github
-  check_every: 3s
+  check_every: 10s
   source:
     uri: https://github.com/Rumb0/concourse-tests.git
 
