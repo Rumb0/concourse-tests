@@ -47,10 +47,11 @@ jobs:
       run:
         path: bash
         args: 
+        - -с
         - |
           export TEST_VAR="((std:win_var1))"
           export TEST_VAR2="((std:win.default1))"
-          github/ci/scripts/build.sh
+          ./github/ci/scripts/build.sh
 
 - name: hello-linux-job
   plan:
