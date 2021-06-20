@@ -1,6 +1,7 @@
 resources:
 - name: repo
-  type: gitlab
+  type: git
+  icon: gitlab
   source:
     uri: https://github.com/concourse/examples.git
 
