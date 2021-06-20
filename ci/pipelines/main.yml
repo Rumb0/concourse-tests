@@ -47,7 +47,7 @@ jobs:
       run:
         path: bash
         args: 
-        - -с
+        - -c
         - |
           export TEST_VAR="((std:win_var1))"
           export TEST_VAR2="((std:win.default1))"
