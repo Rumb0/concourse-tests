@@ -13,7 +13,7 @@ resources:
     uri: https://github.com/Rumb0/concourse-tests.git
 
 
-var_source:
+var_sources:
 - name: std
   type: dummy
   config: 
